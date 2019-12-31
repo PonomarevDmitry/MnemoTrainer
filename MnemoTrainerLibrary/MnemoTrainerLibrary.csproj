@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{583456C4-A5D9-40E5-ADB6-173DF107E0E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MnemoTrainerLibrary</RootNamespace>
+    <AssemblyName>MnemoTrainerLibrary</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AssociationQuestion.cs" />
+    <Compile Include="Classes\AssociationQuestionPart.cs" />
+    <Compile Include="Classes\CheckPointCollection.cs" />
+    <Compile Include="Classes\ClosedList.cs" />
+    <Compile Include="Classes\ColorTest.cs" />
+    <Compile Include="Classes\Common.cs" />
+    <Compile Include="Classes\DoubleClickDefence.cs" />
+    <Compile Include="Classes\MagicLetter.cs" />
+    <Compile Include="Classes\Net.cs" />
+    <Compile Include="Classes\NetElementTest.cs" />
+    <Compile Include="Classes\NetTest.cs" />
+    <Compile Include="Classes\NetUnit.cs" />
+    <Compile Include="Classes\Order.cs" />
+    <Compile Include="Classes\RandomizeCollection.cs" />
+    <Compile Include="Classes\WordDictionary.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Logging\ExerciseAttempt.cs" />
+    <Compile Include="Logging\ExerciseAttemptAssociations.cs" />
+    <Compile Include="Logging\ExerciseAttemptAssociationsPair.cs" />
+    <Compile Include="Logging\ExerciseAttemptAssociationsClosed.cs" />
+    <Compile Include="Logging\ExerciseAttemptDate.cs" />
+    <Compile Include="Logging\ExerciseAttemptNetTrain.cs" />
+    <Compile Include="Logging\ExerciseAttemptAssociationsNumber.cs" />
+    <Compile Include="Logging\ExerciseAttemptAssociationsСonsecutive.cs" />
+    <Compile Include="Logging\ExerciseSerie.cs" />
+    <Compile Include="Logging\ExerciseType.cs" />
+    <Compile Include="Logging\ExerciseTypeCalculate.cs" />
+    <Compile Include="Logging\ExerciseTypeDate.cs" />
+    <Compile Include="Logging\ExerciseTypeImpression.cs" />
+    <Compile Include="Logging\ExerciseTypeInterruptionReading.cs" />
+    <Compile Include="Logging\ExerciseTypeNetTrain.cs" />
+    <Compile Include="Logging\ExerciseTypeNumberGenerator.cs" />
+    <Compile Include="Logging\ExerciseTypeNumericAlphaget.cs" />
+    <Compile Include="Logging\ExerciseTypeSecondArrowAttention.cs" />
+    <Compile Include="Logging\ExerciseTypeStepanovAndRecentMemory.cs" />
+    <Compile Include="Logging\ExerciseTypeStrup.cs" />
+    <Compile Include="Logging\LogExercise.cs" />
+    <Compile Include="Classes\TrainType.cs" />
+    <Compile Include="Classes\TrainTypeCalculate.cs" />
+    <Compile Include="Classes\TrainTypeDate.cs" />
+    <Compile Include="Classes\TrainTypeImpression.cs" />
+    <Compile Include="Classes\TrainTypeNumericAlphaget.cs" />
+    <Compile Include="Classes\TrainTypeStepanovAndRecentMemory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorAssociation.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorAssociationClosed.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorAssociationNumber.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorAssociationPair.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorCalculate.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorCalculateSeries.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorImpression.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorMagicAlphabet.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorMasterMind.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorNet.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorNumberGenerator.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorNumericAlphabet.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorDate.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorRecentMemory.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorStepanov.cs" />
+    <Compile Include="QuestionGenerator\QuestionGeneratorStrup.cs" />
+    <Compile Include="Train\AutoCheckEventHandler.cs" />
+    <Compile Include="Train\MachineStatus.cs" />
+    <Compile Include="Train\QuestionResultEventHandler.cs" />
+    <Compile Include="Train\TrainMachineCalculateSeries.cs" />
+    <Compile Include="Train\TrainMachineColorCircle.cs" />
+    <Compile Include="Train\TrainMachine100For100.cs" />
+    <Compile Include="Train\TrainMachineAssociation.cs" />
+    <Compile Include="Train\TrainMachineAssociationClosed.cs" />
+    <Compile Include="Train\TrainMachineAssociationNumber.cs" />
+    <Compile Include="Train\TrainMachineAssociationPair.cs" />
+    <Compile Include="Train\TrainMachineCalculate.cs" />
+    <Compile Include="Train\TrainMachineDate.cs" />
+    <Compile Include="Train\TrainMachineImpression.cs" />
+    <Compile Include="Train\TrainMachineMagicAlphabet.cs" />
+    <Compile Include="Train\TrainMachineNet.cs" />
+    <Compile Include="Train\TrainMachineNumberGenerator.cs" />
+    <Compile Include="Train\TrainMachineNumericAlphabet.cs" />
+    <Compile Include="Train\TrainMachineReading.cs" />
+    <Compile Include="Train\TrainMachineRecentMemory.cs" />
+    <Compile Include="Train\TrainMachineSecondArrow.cs" />
+    <Compile Include="Train\TrainMachineStepanov.cs" />
+    <Compile Include="Train\TrainMachineStrup.cs" />
+    <Compile Include="Classes\TrainTypeAssociationClosed.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagramExerciseTypes.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

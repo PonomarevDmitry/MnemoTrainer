@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SAClasses.Poem">
+    <Position X="5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAECAEABAAAAQAAAIUAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Poem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAClasses.PoemLine">
+    <Position X="5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAEAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>PoemLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAClasses.PoemPart">
+    <Position X="7.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQAAAAEAAAAAAQAAAIUAAACAAAAAAAAAAA=</HashCode>
+      <FileName>PoemPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAClasses.SA">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAEAAAAAAQAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>SA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAClasses.SABlock">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAIAAQAGAAEgBAAAoQAAAQEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>SABlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SAClasses.SABlockPart">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABIAAAACAAEAAAAAAQAAAAEAAAAAFAAAAAAAAA=</HashCode>
+      <FileName>SABlockPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62809200-61F4-4FD0-90D3-50A32FA24FCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MnemoTrainer</RootNamespace>
+    <AssemblyName>MnemoTrainer</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Analog.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Common.cs" />
+    <Compile Include="Controls\ColorCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlPoemLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlPoemLine.designer.cs">
+      <DependentUpon>ControlPoemLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NetCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Engine.cs" />
+    <Compile Include="Controls\SAViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SAViewer.Designer.cs">
+      <DependentUpon>SAViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSAConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSAConfig.designer.cs">
+      <DependentUpon>FormSAConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSASearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSASearch.designer.cs">
+      <DependentUpon>FormSASearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSATester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSATester.designer.cs">
+      <DependentUpon>FormSATester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\SelectInTreeEventHandler.cs" />
+    <Compile Include="Controls\ErrorPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ErrorPictureBox.Designer.cs">
+      <DependentUpon>ErrorPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToolStripStatusTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormTrain100For100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrain100For100.designer.cs">
+      <DependentUpon>FormTrain100For100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainAssociationPair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainAssociationPair.designer.cs">
+      <DependentUpon>FormTrainAssociationPair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainAssociation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainAssociation.Designer.cs">
+      <DependentUpon>FormTrainAssociation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainCalculate.designer.cs">
+      <DependentUpon>FormTrainCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainCalculationSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainCalculationSeries.designer.cs">
+      <DependentUpon>FormTrainCalculationSeries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainAssociationClosed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainAssociationClosed.designer.cs">
+      <DependentUpon>FormTrainAssociationClosed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainColorCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainColorCircle.designer.cs">
+      <DependentUpon>FormTrainColorCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainDate.designer.cs">
+      <DependentUpon>FormTrainDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainImpression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainImpression.Designer.cs">
+      <DependentUpon>FormTrainImpression.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInterruptionReading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInterruptionReading.designer.cs">
+      <DependentUpon>FormInterruptionReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainMagicAlphabet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainMagicAlphabet.designer.cs">
+      <DependentUpon>FormTrainMagicAlphabet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainNet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainNet.Designer.cs">
+      <DependentUpon>FormTrainNet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainNumberGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainNumberGenerator.designer.cs">
+      <DependentUpon>FormTrainNumberGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainAssociationNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainAssociationNumber.designer.cs">
+      <DependentUpon>FormTrainAssociationNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainNumericAlphabet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainNumericAlphabet.designer.cs">
+      <DependentUpon>FormTrainNumericAlphabet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainRecentMemory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainRecentMemory.designer.cs">
+      <DependentUpon>FormTrainRecentMemory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainSecondArrowAttention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainSecondArrowAttention.designer.cs">
+      <DependentUpon>FormTrainSecondArrowAttention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelect.Designer.cs">
+      <DependentUpon>FormSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainStepanov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainStepanov.designer.cs">
+      <DependentUpon>FormTrainStepanov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrainStrupTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrainStrupTest.designer.cs">
+      <DependentUpon>FormTrainStrupTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\LocalConfiguration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Classes\ProgramConfiguraton.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\ControlPoemLine.resx">
+      <DependentUpon>ControlPoemLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ErrorPictureBox.resx">
+      <DependentUpon>ErrorPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SAViewer.resx">
+      <DependentUpon>SAViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToolStripStatusTimer.resx">
+      <DependentUpon>ToolStripStatusTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrain100For100.resx">
+      <DependentUpon>FormTrain100For100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainAssociationPair.resx">
+      <DependentUpon>FormTrainAssociationPair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainAssociation.resx">
+      <DependentUpon>FormTrainAssociation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainCalculate.resx">
+      <DependentUpon>FormTrainCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainCalculationSeries.resx">
+      <DependentUpon>FormTrainCalculationSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainAssociationClosed.resx">
+      <DependentUpon>FormTrainAssociationClosed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainColorCircle.resx">
+      <DependentUpon>FormTrainColorCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainDate.resx">
+      <DependentUpon>FormTrainDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainImpression.resx">
+      <DependentUpon>FormTrainImpression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInterruptionReading.resx">
+      <DependentUpon>FormInterruptionReading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainMagicAlphabet.resx">
+      <DependentUpon>FormTrainMagicAlphabet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainNet.resx">
+      <DependentUpon>FormTrainNet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainNumberGenerator.resx">
+      <DependentUpon>FormTrainNumberGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainAssociationNumber.resx">
+      <DependentUpon>FormTrainAssociationNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainNumericAlphabet.resx">
+      <DependentUpon>FormTrainNumericAlphabet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainRecentMemory.resx">
+      <DependentUpon>FormTrainRecentMemory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSAConfig.resx">
+      <DependentUpon>FormSAConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSASearch.resx">
+      <DependentUpon>FormSASearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSATester.resx">
+      <DependentUpon>FormSATester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainSecondArrowAttention.resx">
+      <DependentUpon>FormTrainSecondArrowAttention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelect.resx">
+      <DependentUpon>FormSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainStepanov.resx">
+      <DependentUpon>FormTrainStepanov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrainStrupTest.resx">
+      <DependentUpon>FormTrainStrupTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Analog.Controls.dll" />
+    <Content Include="Icon.ico" />
+    <None Include="Resources\RefreshArrow.png" />
+    <None Include="Resources\Clear.png" />
+    <None Include="Resources\SABlockPart.ico" />
+    <None Include="Resources\SABlock.ico" />
+    <None Include="Resources\SA.ico" />
+    <None Include="Resources\PoemPart.ico" />
+    <None Include="Resources\PoemLine.ico" />
+    <None Include="Resources\Poem.ico" />
+    <None Include="Resources\none.ico" />
+    <None Include="Resources\ico_01923.ico" />
+    <None Include="Resources\ico_01667.ico" />
+    <None Include="Resources\ico_00587.ico" />
+    <None Include="Resources\ico_00289.ico" />
+    <None Include="Resources\ico_00287.ico" />
+    <None Include="Resources\ico_00251.ico" />
+    <None Include="Resources\ico_00139.ico" />
+    <None Include="Resources\ico_00007.ico" />
+    <None Include="Resources\ZoomHS.png" />
+    <None Include="Resources\XMLFileHS.png" />
+    <None Include="Resources\saveHS.png" />
+    <None Include="Resources\OpenFile.png" />
+    <None Include="Resources\MovePreviousHS.png" />
+    <None Include="Resources\MoveNextHS.png" />
+    <None Include="Resources\MoveLastHS.png" />
+    <None Include="Resources\MoveFirstHS.png" />
+    <None Include="Resources\GoToPrevious.png" />
+    <None Include="Resources\GoToNextHS.png" />
+    <None Include="Resources\FunctionHS.png" />
+    <None Include="Resources\ActualSizeHS.png" />
+    <None Include="Resources\search.ico" />
+    <None Include="Resources\Change.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MnemoTrainerLibrary\MnemoTrainerLibrary.csproj">
+      <Project>{583456C4-A5D9-40E5-ADB6-173DF107E0E8}</Project>
+      <Name>MnemoTrainerLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAClasses\SAClasses.csproj">
+      <Project>{A8763D5E-212E-4C6F-B47D-5403814244D4}</Project>
+      <Name>SAClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

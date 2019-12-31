@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseAttempt">
+    <Position X="8.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAACCAAggAAAAAAACAAAEAQAAAABIAAEAQCAAoAAAQA=</HashCode>
+      <FileName>Logging\ExerciseAttempt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.LogExercise" Collapsed="true">
+    <Position X="21.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAEBKAAAQAAAACAAAAAAAEAIAAAAAAAAo=</HashCode>
+      <FileName>Logging\LogExercise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseAttemptAssociationsPair">
+    <Position X="7" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIAQCACAAgAoAAAAgAEAAAAAQABAAEBAAAAIAAAAA=</HashCode>
+      <FileName>Logging\ExerciseAttemptAssociationsPair.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseAttemptAssociationsClosed">
+    <Position X="11.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIAQCACAAAAIAAAQgAEAAAAAQAAAAEBAAIAIAAAAA=</HashCode>
+      <FileName>Logging\ExerciseAttemptAssociationsClosed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseAttemptDate">
+    <Position X="3.75" Y="14.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAA=</HashCode>
+      <FileName>Logging\ExerciseAttemptDate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseAttemptNetTrain">
+    <Position X="1.5" Y="14.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIAEAAA=</HashCode>
+      <FileName>Logging\ExerciseAttemptNetTrain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseAttemptAssociationsСonsecutive">
+    <Position X="4" Y="19.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAIAQCACAAgAIAAAAgAEAAAAAQABAAEBAAAAIAAAAA=</HashCode>
+      <FileName>Logging\ExerciseAttemptAssociationsСonsecutive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseAttemptAssociationsNumber">
+    <Position X="9.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIAQCACAAgAIAAAAgAEAAAAAQABAAEBAAAAIAAAAA=</HashCode>
+      <FileName>Logging\ExerciseAttemptAssociationsNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseSerie" Collapsed="true">
+    <Position X="20" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAIAQAAAAAAAIABIAAAABAAEAABIAAABQAAAIEBAAA=</HashCode>
+      <FileName>Logging\ExerciseSerie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseType" Collapsed="true">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEoAAAAAAAAAABIIAAAQEAABABAAA=</HashCode>
+      <FileName>Logging\ExerciseType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeCalculate" Collapsed="true">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAqABAAAAAAAAAAIAAAAAAABAFAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeCalculate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeDate" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAoAAAAAAAAAAAAIAAAAAAABAFAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeDate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeImpression" Collapsed="true">
+    <Position X="11.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAAAAAAAAoAFAAAAAAAAAAIAAAAAAABAFAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeImpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeInterruptionReading" Collapsed="true">
+    <Position X="16.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAoAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeInterruptionReading.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeNetTrain" Collapsed="true">
+    <Position X="20.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAoAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeNetTrain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeNumberGenerator" Collapsed="true">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAoAEAAQAAAAAAAIAAAAAAABABAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeNumberGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeNumericAlphaget" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAoAAAAAAAAAAAAIAAAAAAABAFAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeNumericAlphaget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeSecondArrowAttention" Collapsed="true">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAoAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeSecondArrowAttention.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeStepanovAndRecentMemory" Collapsed="true">
+    <Position X="18.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAoAEAAAAAAAAAAIAAAAAAABAFAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeStepanovAndRecentMemory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseTypeStrup" Collapsed="true">
+    <Position X="23" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAoAAAAQAAAAAAAIAAAAAAABABAAA=</HashCode>
+      <FileName>Logging\ExerciseTypeStrup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MnemoTrainerLibrary.Logging.ExerciseAttemptAssociations">
+    <Position X="8.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\ExerciseAttemptAssociations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
