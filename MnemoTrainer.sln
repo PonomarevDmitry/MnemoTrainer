@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MnemoTrainer", "MnemoTrainer\MnemoTrainer.csproj", "{62809200-61F4-4FD0-90D3-50A32FA24FCA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAClasses", "SAClasses\SAClasses.csproj", "{A8763D5E-212E-4C6F-B47D-5403814244D4}"
@@ -10,22 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MnemoTrainerWPF", "MnemoTrainerWPF\MnemoTrainerWPF.csproj", "{D017BAF9-4D0D-4EB6-936C-C93B999603AE}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 5
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MnemoTrainer\\MnemoTrainer.csproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = MnemoTrainer\\
-		SccProjectUniqueName2 = MnemoTrainerLibrary\\MnemoTrainerLibrary.csproj
-		SccLocalPath2 = .
-		SccProjectFilePathRelativizedFromConnection2 = MnemoTrainerLibrary\\
-		SccProjectUniqueName3 = MnemoTrainerWPF\\MnemoTrainerWPF.csproj
-		SccLocalPath3 = .
-		SccProjectFilePathRelativizedFromConnection3 = MnemoTrainerWPF\\
-		SccProjectUniqueName4 = SAClasses\\SAClasses.csproj
-		SccLocalPath4 = .
-		SccProjectFilePathRelativizedFromConnection4 = SAClasses\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -80,5 +66,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA67113B-F75C-4966-BA65-D1F88B1C9FF3}
 	EndGlobalSection
 EndGlobal
